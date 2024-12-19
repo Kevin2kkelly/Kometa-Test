@@ -1,0 +1,31 @@
+# templates:
+#   TBP:
+#     build_collection: false
+#     letterboxd_list_details: <<value>>
+#     show_missing: true
+#     save_report: true
+#     # radarr_add_missing: true
+#     # radarr_monitor: true
+#     # radarr_tag: The Big Picture
+#     cache_builders: 30
+
+# dynamic_collections:
+#   The Big Picture:          # This name is the mapping name
+#     type: letterboxd_user_lists
+#     data:
+#       username: thebigpictures
+#       limit: 0
+#       sort_by: newest
+#     template: TBP
+
+collections:
+  The Rewatchables:
+    letterboxd_list: https://letterboxd.com/marq/list/the-rewatchables/by/reverse/
+    sync_mode: sync
+    sort_title: "!010_Custom-06"
+    collection_order: custom
+    summary: The Rewatchables, a film podcast from the Ringer Podcast Network, features The Ringer's Bill Simmons and a roundtable of people from The Ringer universe discussing movies they can’t seem to stop watching. 
+    radarr_add_missing: true
+    radarr_monitor: true
+    radarr_tag: The Rewatchables
+    item_radarr_tag: The Rewatchables
