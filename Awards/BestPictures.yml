@@ -1,0 +1,37 @@
+templates:
+  Winners:
+    letterboxd_list_details: <<letterboxd_list>>
+    sync_mode: sync
+    sort_title: +Z2-Oscars-<<collection_name>>
+    collection_order: custom
+    show_missing: true
+    save_report: true
+    url_background: https://i.imgur.com/vqupfTX.jpeg
+    radarr_add_missing: true
+    radarr_monitor: true
+    radarr_tag: <<collection_name>>
+    item_radarr_tag: <<collection_name>>
+
+  Nominees:  #Updated 2025 Dates
+    imdb_award: 
+      event_id: ev0000003
+      event_year: latest
+      category_filter: <<category_filter>>
+      winning: false
+    collection_order: alpha
+    sort_title: +1_CATEGORY-00
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/oscars/nomination/2024.jpg
+    summary: "A collection of current year nominees for the Academy Award for Best Motion Picture of the Year."
+    schedule: range(01/18-03/09)
+    visible_home: range(01/18-03/09)
+    visible_shared: range(01/18-03/09)
+    visible_library: range(01/18-03/09)
+
+collections:
+#####################################################
+#                      Winners                      #
+#####################################################
+  Best Picture:
+    template:
+      name: Winners
+      letterboxd_list: https://letterboxd.com/oscars/list/oscar-winning-films-best-picture/
